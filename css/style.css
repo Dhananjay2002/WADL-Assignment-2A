@@ -1,0 +1,212 @@
+body
+{
+    background-color: #f1f3f4;
+    font-family: sans-serif;
+}
+.top-nav-bar
+{
+    height: 65px;
+     top:0;
+    position: sticky;
+    background: #fff;
+    margin-bottom: 20px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.359);
+    z-index: 2;
+}
+.top-nav-bar h1
+{
+    margin-top: 5px;
+    font-size: 40px;
+}
+.logo
+{
+    height: 40px;
+    margin: 10px;
+}
+.form-control
+{
+    height: 45px;
+    margin-top: 9px !important;
+    margin-left: 30px !important;
+    border: 2px solid black !important;
+}
+.input-group-text
+{
+    height: 45px;
+    background:rgba(0, 0, 0, 0.107) !important;
+    border: 1px solid black !important;
+    margin: 8.5px 10px 3px 0 !important;
+    cursor: pointer !important;
+
+}
+
+.search-box
+{
+    display: inline-flex;
+    width: 60%;
+}
+.menu-bar
+{
+    width: 40%;
+    height: 65px;
+    float: right;
+}
+.menu-bar ul
+{
+    display:inline-flex;
+    margin-top: 3px;
+    margin-right: 10px;
+    float: right;
+}
+.menu-bar ul li
+{
+    border-left: 1px solid black;
+    list-style-type: none;
+    padding: 15px 35px;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.305) ;
+    cursor: pointer;
+}
+
+.menu-bar ul li a
+{
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+.fa-solid
+{
+    margin-right: 4px !important;
+}
+
+@media only screen and (max-width:980px)
+{
+    .top-nav-bar
+    {
+        height: 118px;
+        border-bottom: 0;
+    }
+    .search-box
+    {
+        width: 100%;
+    }
+    .menu-bar
+    {
+        width: 100%;
+    }
+
+    .menu-bar ul 
+    {
+        margin: 10px 20px 0 10px ;
+        width: 100%;
+    }
+    .menu-bar ul li
+     {
+        height: 57px;
+        width: 100%;
+    }
+}
+
+
+/*----------------------------Side-Menu--------------------------------*/
+
+.side-menu
+{
+    height: 79%;
+    width: 15%;
+    float: left;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.141);
+}
+
+
+
+#menu-btn,#close-btn
+{
+     font-size: 30px;
+     margin: 10px;
+     color: black;
+     display: none;
+}
+
+@media only screen and (max-width:980px) {
+    .side-menu {
+            width: 34%;
+            top: 133px;
+            z-index: 20;
+            position: fixed;
+            font-size: 12px;
+            display: none;
+        }
+    
+        .side-menu ul li ul
+        {
+            top:133px;
+        }
+        .side-menu ul li:hover ul 
+        {
+            margin-left:27% ;
+        }
+        #menu-btn
+        {
+            display: block;
+        }
+
+
+}
+
+
+
+/*Boot strp cards*/
+
+.container
+{
+   z-index: 2;
+}
+.order-card {
+    color: #fff;
+}
+
+.bg-c-blue {
+    background: linear-gradient(45deg,#4099ff,#73b4ff);
+}
+
+.bg-c-green {
+    background: linear-gradient(45deg,#2ed8b6,#59e0c5);
+}
+
+.bg-c-yellow {
+    background: linear-gradient(45deg,#FFB64D,#ffcb80);
+}
+
+.bg-c-pink {
+    background: linear-gradient(45deg,#FF5370,#ff869a);
+}
+
+
+.card {
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+    box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+    border: none;
+    margin-bottom: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.card .card-block {
+    padding: 25px;
+}
+
+.order-card i {
+    font-size: 26px;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}

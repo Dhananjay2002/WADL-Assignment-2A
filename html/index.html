@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap cards link-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- css link-->
+    <link rel="stylesheet" href="/css/style.css">
+    <!--bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--font awosom link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <!--bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous">
+    </script>
+
+    <title>Document</title>
+</head>
+<body>
+    <!--top nav bar-->
+    <div  class="top-nav-bar">
+        <div class="search-box">
+            <i class="fa-solid fa-bars" id="menu-btn" onclick="openmenu()"></i>
+            <i class="fa-solid fa-times" id="close-btn" onclick="openclosemenu()"></i>
+            <img class="logo" src="/images/logo.jpg">
+            <h1>Amazon</h1><br>
+
+            <input type="text" class="form-control">
+            <span class="input-group-text"><i class="fa fa-magnifying-glass"></i></i></span>
+        </div>
+
+
+        <div class="menu-bar">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i>Log In</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!--vertical menu-->
+    <section class="header side-menu">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fa-solid fa-cart-shopping"></i> Cart
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li>sub-menu11</li>
+                    <li>sub-menu12</li>
+                    <li>sub-menu13</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <i class="fa-solid fa-calendar-days"></i> Orders
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>sub-menu21</li>
+                        <li>sub-menu22</li>
+                        <li>sub-menu23</li>
+                      </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <i class="fa-solid fa-heart"></i> Wish List
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>sub-menu31</li>
+                        <li>sub-menu32</li>
+                        <li>sub-menu33</li>
+                      </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </section>
+
+
+<!--CARDS-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-blue order-card">
+                <div class="card-block">
+                    <h6 class="m-b-20">Orders Received</h6>
+                    <h2 class="text-right"><i class="fa fa-cart-plus f-left"></i><span>486</span></h2>
+                    <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-green order-card">
+                <div class="card-block">
+                    <h6 class="m-b-20">Orders Received</h6>
+                    <h2 class="text-right"><i class="fa fa-rocket f-left"></i><span>486</span></h2>
+                    <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-yellow order-card">
+                <div class="card-block">
+                    <h6 class="m-b-20">Orders Received</h6>
+                    <h2 class="text-right"><i class="fa fa-refresh f-left"></i><span>486</span></h2>
+                    <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-pink order-card">
+                <div class="card-block">
+                    <h6 class="m-b-20">Orders Received</h6>
+                    <h2 class="text-right"><i class="fa fa-credit-card f-left"></i><span>486</span></h2>
+                    <p class="m-b-0">Completed Orders<span class="f-right">351</span></p>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+
+
+
+
+<section style="background-color: #eee;">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
+          <div class="card text-black">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-product-cards/img1.webp"
+              class="card-img-top" alt="iPhone" />
+            <div class="card-body">
+              <div class="text-center mt-1">
+                <h4 class="card-title">iPhone X</h4>
+                <h6 class="text-primary mb-1 pb-3">Starting at $399</h6>
+              </div>
+  
+              <div class="text-center">
+                <div class="p-3 mx-n3 mb-4" style="background-color: #eff1f2;">
+                  <h5 class="mb-0">Quick Look</h5>
+                </div>
+  
+                <div class="d-flex flex-column mb-4">
+                  <span class="h1 mb-0">5.8″</span>
+                  <span>Super Retina HD display1</span>
+                </div>
+  
+                <div class="d-flex flex-column mb-4">
+                  <span class="h1 mb-0">
+                    <i class="fas fa-camera-retro"></i>
+                  </span>
+                  <ul class="list-unstyled mb-0">
+                    <li aria-hidden="true">—</li>
+                    <li>Wide</li>
+                    <li>Telephoto</li>
+                    <li aria-hidden="true">—</li>
+                  </ul>
+                </div>
+  
+                <div class="d-flex flex-column mb-4">
+                  <span class="h1 mb-0">2x</span>
+                  <span>Optical zoom range</span>
+                </div>
+  
+                <div class="p-3 mx-n3 mb-4" style="background-color: #eff1f2;">
+                  <h5 class="mb-0">Capacity</h5>
+                </div>
+  
+                <div class="d-flex flex-column mb-4 lead">
+                  <span class="mb-2">64GB</span>
+                  <span class="mb-2">256GB</span>
+                  <span style="color: transparent;">0</span>
+                </div>
+              </div>
+  
+              <div class="d-flex flex-row">
+                <button type="button" class="btn btn-primary flex-fill me-1" data-mdb-ripple-color="dark">
+                  Learn more
+                </button>
+                <button type="button" class="btn btn-danger flex-fill ms-1">Buy now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="card text-black">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-product-cards/img2.webp"
+              class="card-img-top" alt="iPhone" />
+            <div class="card-body">
+              <div class="text-center mt-1">
+                <h4 class="card-title">iPhone 11</h4>
+                <h6 class="text-primary mb-1 pb-3">Starting at $499</h6>
+              </div>
+  
+              <div class="text-center">
+                <div class="p-3 mx-n3 mb-4" style="background-color: #eff1f2;">
+                  <h5 class="mb-0">Quick Look</h5>
+                </div>
+  
+                <div class="d-flex flex-column mb-4">
+                  <span class="h1 mb-0">6.1″</span>
+                  <span>Liquid Retina HD display1</span>
+                </div>
+  
+                <div class="d-flex flex-column mb-4">
+                  <span class="h1 mb-0">
+                    <i class="fas fa-camera-retro"></i>
+                  </span>
+                  <ul class="list-unstyled mb-0">
+                    <li aria-hidden="true">Ultra Wide</li>
+                    <li>Wide</li>
+                    <li aria-hidden="true">—</li>
+                    <li aria-hidden="true">—</li>
+                  </ul>
+                </div>
+  
+                <div class="d-flex flex-column mb-4">
+                  <span class="h1 mb-0">2x</span>
+                  <span>Optical zoom range</span>
+                </div>
+  
+                <div class="p-3 mx-n3 mb-4" style="background-color: #eff1f2;">
+                  <h5 class="mb-0">Capacity</h5>
+                </div>
+  
+                <div class="d-flex flex-column mb-4 lead">
+                  <span class="mb-2">64GB</span>
+                  <span class="mb-2">128GB</span>
+                  <span>256GB</span>
+                </div>
+              </div>
+  
+              <div class="d-flex flex-row">
+                <button type="button" class="btn btn-primary flex-fill me-1" data-mdb-ripple-color="dark">
+                  Learn more
+                </button>
+                <button type="button" class="btn btn-danger flex-fill ms-1">Buy now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="card text-black">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-product-cards/img3.webp"
+              class="card-img-top" alt="iPhone" />
+            <div class="card-body">
+              <div class="text-center mt-1">
+                <h4 class="card-title">iPhone 11 Pro</h4>
+                <h6 class="text-primary mb-1 pb-3">Starting at $599</h6>
+              </div>
+  
+              <div class="text-center">
+                <div class="p-3 mx-n3 mb-4" style="background-color: #eff1f2;">
+                  <h5 class="mb-0">Quick Look</h5>
+                </div>
+  
+                <div class="d-flex flex-column mb-4">
+                  <span class="h1 mb-0">5.8″</span>
+                  <span>Super Retina HD display1</span>
+                </div>
+  
+                <div class="d-flex flex-column mb-4">
+                  <span class="h1 mb-0">
+                    <i class="fas fa-camera-retro"></i>
+                  </span>
+                  <ul class="list-unstyled mb-0">
+                    <li aria-hidden="true">Ultra Wide</li>
+                    <li>Wide</li>
+                    <li>Telephoto</li>
+                    <li aria-hidden="true">—</li>
+                  </ul>
+                </div>
+  
+                <div class="d-flex flex-column mb-4">
+                  <span class="h1 mb-0">4x</span>
+                  <span>Optical zoom range</span>
+                </div>
+  
+                <div class="p-3 mx-n3 mb-4" style="background-color: #eff1f2;">
+                  <h5 class="mb-0">Capacity</h5>
+                </div>
+  
+                <div class="d-flex flex-column mb-4 lead">
+                  <span class="mb-2">64GB</span>
+                  <span class="mb-2">256GB</span>
+                  <span>512GB</span>
+                </div>
+              </div>
+  
+              <div class="d-flex flex-row">
+                <button type="button" class="btn btn-primary flex-fill me-1" data-mdb-ripple-color="dark">
+                  Learn more
+                </button>
+                <button type="button" class="btn btn-danger flex-fill ms-1">Buy now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+    <script>
+        function openmenu()
+        {
+            document.getElementById("side-menu").style.display="block";
+            document.getElementById("menu-btn").style.display = "none";
+            document.getElementById("close-btn").style.display = "block";
+        }
+
+        function openclosemenu() 
+        {
+            document.getElementById("side-menu").style.display = "block";
+            document.getElementById("menu-btn").style.display = "block";
+            document.getElementById("close-btn").style.display = "none";
+        }
+    </script>
+
+
+</body>
+
+</html>
